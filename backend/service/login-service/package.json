@@ -1,5 +1,5 @@
 {
-    "name": "@prj--join-journey/authenticate-service",
+    "name": "@prj--join-journey/login-service",
     "private": true,
     "version": "0.0.0",
     "main": "dist/index.js",
