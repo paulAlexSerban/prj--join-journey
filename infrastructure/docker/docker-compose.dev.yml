@@ -1,0 +1,23 @@
+---
+version: '3.8'
+
+services:
+    # ---------------------------------------------------------------------
+    # | Login Service                                                     |
+    # ---------------------------------------------------------------------
+    login-service:
+        container_name: login-service-container
+        build:
+            context: ../../backend/service/login-service
+            dockerfile: dev.Dockerfile
+        ports:
+            - '3000:4001' # Expose the port your app runs on
+        volumes:
+            - ../../backend/service/login-service:/usr/src/app # Mount the app directory to the container
+            - /usr/src/app/node_modules # Avoids overwriting node_modules with local volume
+        networks:
+            - join-journey-network
+
+networks:
+    join-journey-network:
+        driver: bridge

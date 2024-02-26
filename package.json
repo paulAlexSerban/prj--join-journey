@@ -1,9 +1,13 @@
 {
     "name": "@prj--join-journey/core",
+    "formattedName": "JoinJourney",
     "version": "0.0.0",
     "author": "paulAlexSerban <paul.alex.serban@gmail.com>",
     "license": "MIT",
     "scripts": {
+        "/////": "//////",
+        "compose:up": "bash ./tools/build-scripts/compose-up.bash",
+        "compose:down": "bash ./tools/build-scripts/compose-down.bash",
         "////": "/////",
         "develop": "yarn lerna run develop",
         "///": "GIT",

@@ -15,7 +15,11 @@ app.use((req, res, next) => {
     next();
 });
 
-app.post('/auth', async (req: Request, res: Response) => {
+app.get('/', (req: Request, res: Response) => {
+    res.status(200).json({ message: 'Login service is running!' });
+});
+
+app.post('/login', async (req: Request, res: Response) => {
     const { email, password } = req.body;
     console.log({
         email,

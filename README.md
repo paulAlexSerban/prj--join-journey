@@ -1,6 +1,6 @@
-# Project Title: MERN Full Stack App with Authentication and Security
+# JoinJourney
 
-This project aims to create a full-stack web application using the MERN stack (MongoDB, Express.js, React, Node.js), with a focus on robust authentication, security features, and scalable deployment using Docker and Kubernetes. The application will offer users the ability to sign up and log in to access various services provided by the platform.
+Full-stack web application using the MERN stack (MongoDB, Express.js, React, Node.js), with a focus on robust authentication, security features, and scalable deployment using Docker and Kubernetes. The application will offer users the ability to sign up and log in to access various services provided by the platform.
 
 ## Features
 

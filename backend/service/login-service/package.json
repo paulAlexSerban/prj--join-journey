@@ -4,10 +4,19 @@
     "version": "0.0.0",
     "main": "dist/index.js",
     "scripts": {
+        "/": "DEVELOP",
         "develop": "concurrently \"yarn tsc --watch\" \"nodemon -q dist/index.js\"",
         "start": "node dist/index.js",
+        "//": "BUILD - LOCAL",
         "build:dev": "yarn tsc",
-        "build:prod": "yarn tsc"
+        "build:prod": "yarn tsc",
+        "///": "BUILD - DOCKER",
+        "build:docker:dev": "bash scripts/build-docker-dev.bash",
+        "build:docker:release": "bash scripts/build-docker-release.bash",
+        "build:docker:prod": "bash scripts/build-docker-prod.bash",
+        "////": "PUSH - DOCKER",
+        "push:docker:dev": "bash scripts/push-docker-dev-dockerhub.bash",
+        "push:docker:prod": "bash scripts/push-docker-prod-dockerhub.bash"
     },
     "dependencies": {
         "@types/express": "^4.17.21",
